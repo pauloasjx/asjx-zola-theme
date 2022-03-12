@@ -1,0 +1,21 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+title = "Someone"
+# Whether to automatically compile all sass files
+compile_sass = true
+
+build_search_index = true
+
+[markdown]
+highlight_code = true
+
+[extra]
+socials = [
+    { href = "https://twitter.com/", icon = "im im-twitter", text = "Twitter" },
+    { href = "https://www.linkedin.com/in/", icon = "im im-linkedin", text = "Linkedin" },
+    { href = "https://github.com/", icon = "im im-github", text = "Github" },
+]
+
+[languages.pt]
+generate_feed = true
+build_search_index = true

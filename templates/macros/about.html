@@ -1,0 +1,86 @@
+{% macro about() %}
+<section id="sobre" class="s-about target-section">
+    <div class="row narrow section-intro has-bottom-sep">
+      <div class="col-full text-center">
+          <h3>{{ section.extra.about.title }}</h3>
+          <h1>{{ section.extra.about.description }}</h1>
+          <p class="lead">{{ section.extra.about.content }}</p>
+      </div>
+    </div>
+    
+    <div class="row about-content">
+        <div class="col-six tab-full left">
+            <h3>{{ section.extra.about.more.title }}</h3>
+            <p>
+                {{ section.extra.about.more.content }}
+            </p>
+        </div>
+
+        {# Enable skills section #}
+        <div class="col-six tab-full right">
+            <h3>{{ section.extra.skills.skills_title | safe }}</h3>
+        
+            <ul class="skill-bars">
+                {% for skill in section.extra.skills.skills %} 
+                    <li>
+                        <div class="progress percent{{skill.percentage}}"></div>
+                        <strong>{{ skill.name }}</strong>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row about-content about-content--buttons">
+        <div class="col-six tab-full left">
+            <a target="_blank "href="{{ section.extra.about.more.button_href }}" class="btn btn--primary full-width">{{ section.extra.about.more.button }}</a>
+        </div>
+        <div class="col-six tab-full right">
+
+        </div>
+    </div>
+
+    <div id="historico" class="row about-content about-content--timeline">
+
+        <div class="col-full text-center">
+            <h3>{{ section.extra.timeline.title }}</h3>
+        </div>
+
+        <div class="col-six tab-full right">
+            <div class="timeline">
+                {% for timeblock in section.extra.timeline.right %}
+                <div class="timeline__block">
+                    <div class="timeline__bullet"></div>
+                    <div class="timeline__header">
+                        <p class="timeline__timeframe">{{timeblock.period}}</p>
+                        <h3>{{timeblock.place}}</h3>
+                        <h5>{{timeblock.work}}</h5>
+                    </div>
+                    <div class="timeline__desc">
+                        {{timeblock.content}}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col-six tab-full left">
+            <div class="timeline">
+                {% for timeblock in section.extra.timeline.left %}
+                <div class="timeline__block">
+                    <div class="timeline__bullet"></div>
+                    <div class="timeline__header">
+                        <p class="timeline__timeframe">{{timeblock.period}}</p>
+                        <h3>{{timeblock.place}}</h3>
+                        <h5>{{timeblock.work}}</h5>
+                    </div>
+                    <div class="timeline__desc">
+                        {{timeblock.content}}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+      </div>
+    </section>
+{% endmacro %}

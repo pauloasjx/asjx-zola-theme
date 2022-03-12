@@ -1,0 +1,26 @@
+{% macro profile() %}
+<section id="home" class="s-home page-hero target-section">
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+    <div id="sketch" style="z-index: -10"></div>
+    <div class="home-content">
+        <div class="row home-content__main">
+            <h3>{{ section.extra.profile.title }}</h3>
+            <h1>{{ section.extra.profile.description }}</h1>
+            <div class="home-content__buttons">
+                {% for button in section.extra.profile.buttons %}
+                <a href="{{ button.url }}" class="smoothscroll btn btn--stroke">
+                    {{ button.text }}
+                </a>
+                {% endfor %}
+            </div>
+            <div class="home-content__scroll">
+                <a href="#sobre" class="scroll-link smoothscroll">
+                    <span>{{ section.extra.profile.arrow }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <Social/>
+</section>
+{% endmacro %}

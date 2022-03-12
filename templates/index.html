@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+{# Enable menu section #}
+{% if section.extra.menu.enabled %}
+    {{ macros_menu::menu() }}
+{% endif %}
+
+{# Enable profile section #}
+{% if section.extra.profile.enabled %}
+    {{ macros_profile::profile() }}
+{% endif %}
+
+{# Enable about section #}
+{% if section.extra.about.enabled %}
+    {{ macros_about::about() }}
+{% endif %}
+
+{# Enable projects section #}
+{% if section.extra.projects.enabled %}
+    {{ macros_projects::projects() }}
+{% endif %}
+
+{# Enable quote section #}
+{% if section.extra.quote.enabled %}
+    {{ macros_quote::quote() }}
+{% endif %}
+
+{# Enable quote section #}
+{% if section.extra.quote.enabled %}
+    {{ macros_github::github() }}
+{% endif %}
+
+{# Enable contact section #}
+{% if section.extra.contact.enabled %}
+    {{ macros_contact::contact() }}
+{% endif %}
+{{ macros_scripts::scripts() }}
+{% endblock content %}

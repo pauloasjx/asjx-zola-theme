@@ -1,0 +1,24 @@
+{%- import 'macros/head.html' as macros_head -%}
+{% import 'macros/menu.html' as macros_menu -%}
+{% import 'macros/profile.html' as macros_profile -%}
+{% import 'macros/about.html' as macros_about -%}
+{% import 'macros/contact.html' as macros_contact -%}
+{% import 'macros/footer.html' as macros_footer -%}
+{% import 'macros/skills.html' as macros_skills -%}
+{% import 'macros/github.html' as macros_github -%}
+{% import 'macros/quote.html' as macros_quote -%}
+{% import 'macros/projects.html' as macros_projects -%}
+{% import 'macros/scripts.html' as macros_scripts -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  {{ macros_head::stylesheet() }}
+</head>
+
+<body>
+    {% block content %}{% endblock content %}
+    {{ macros_footer::footer() }}
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{% macro skills() %}
+<div class="col-six tab-full right">
+    <h3>{{ section.extra.skills.skills_title | safe }}</h3>
+
+    <ul class="skill-bars">
+        {% for skill in section.extra.skills.skills %} 
+            <li>
+                <div class="progress percent{{skill.percentage}}"></div>
+                <strong>{{ skill.name }}</strong>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endmacro %}

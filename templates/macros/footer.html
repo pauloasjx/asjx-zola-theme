@@ -1,0 +1,35 @@
+{% macro footer() %}
+<footer>
+    <div class="row">
+        <div class="col-full">
+
+            <ul class="footer-social">
+                {% for social in config.extra.socials %} 
+                <li>
+                    <a href={{ social.href | safe }}>
+                        <i class={{ social.icon | safe }} aria-hidden="true"></i>
+                        <span>{{ social.text | safe }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="row footer-bottom">
+
+        <div class="col-twelve">
+            <div class="copyright">
+                <span>© {{ config.title }} - 2022</span>
+                <span>Componentizado e customizado a partir do layout <a href="https://www.styleshout.com/">hola</a></span>
+            </div>
+
+
+            <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+{% endmacro %}

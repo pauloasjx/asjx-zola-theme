@@ -1,0 +1,7 @@
+{% macro stylesheet() %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#000000">
+<title>{{ config.title }}</title>
+<link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+{% endmacro %}

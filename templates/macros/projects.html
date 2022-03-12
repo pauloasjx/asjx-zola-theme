@@ -1,0 +1,49 @@
+{% macro projects() %}
+<section id="trabalhos" class="s-works target-section">
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full">
+            <h3>{{ section.extra.projects.title }}</h3>
+            <h1>{{ section.extra.projects.description }}</h1>
+
+            <p class="lead">{{ section.extra.projects.content }}</p>
+        </div>
+    </div>
+
+    <div class="row masonry-wrap">
+        <div class="masonry">
+            {% for project in section.extra.projects.projects %}
+            <div class="masonry__brick">
+                <div class="item-folio">
+          
+                    <div class="item-folio__thumb">
+                        <a href={{ project.image }} class="thumb-link" data-size="1050x700">
+                            <img src={{ project.image }}
+                                 srcset="{{ project.image }} 1x, {{ project.image }} 2x" alt=""/>
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+          
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">
+                            {{ project.title }}
+                        </h3>
+                        <p class="item-folio__cat">
+                            {{ project.subtitle }}
+                        </p>
+                    </div>
+          
+                    <a href={{ project.href }} class="item-folio__project-link" title="Link do projeto">
+                        <i class="im im-link"></i>
+                    </a>
+          
+                    <div class="item-folio__caption">
+                        <p>{{ project.text }}</p>
+                    </div>
+          
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endmacro %}
