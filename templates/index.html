@@ -2,38 +2,37 @@
 
 {% block content %}
 {# Enable menu section #}
-{% if section.extra.menu.enabled %}
+{% if config.extra.enabled.menu %}
     {{ macros_menu::menu() }}
 {% endif %}
 
 {# Enable profile section #}
-{% if section.extra.profile.enabled %}
+{% if config.extra.enabled.profile %}
     {{ macros_profile::profile() }}
 {% endif %}
 
 {# Enable about section #}
-{% if section.extra.about.enabled %}
+{% if config.extra.enabled.about %}
     {{ macros_about::about() }}
 {% endif %}
 
 {# Enable projects section #}
-{% if section.extra.projects.enabled %}
+{% if config.extra.enabled.projects %}
     {{ macros_projects::projects() }}
 {% endif %}
 
 {# Enable quote section #}
-{% if section.extra.quote.enabled %}
+{% if config.extra.enabled.quote %}
     {{ macros_quote::quote() }}
 {% endif %}
 
 {# Enable quote section #}
-{% if section.extra.quote.enabled %}
+{% if config.extra.enabled.quote %}
     {{ macros_github::github() }}
 {% endif %}
 
 {# Enable contact section #}
-{% if section.extra.contact.enabled %}
+{% if config.extra.enabled.contact %}
     {{ macros_contact::contact() }}
 {% endif %}
-{{ macros_scripts::scripts() }}
 {% endblock content %}

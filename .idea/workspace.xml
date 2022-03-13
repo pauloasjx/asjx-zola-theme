@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3777c89f-9078-4682-ac98-0d518ed0970a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elasticlunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/librebaskerville/librebaskerville-bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/librebaskerville/librebaskerville-bold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/librebaskerville/librebaskerville-italic-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/librebaskerville/librebaskerville-italic-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/librebaskerville/librebaskerville-regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/librebaskerville/librebaskerville-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-black-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-black-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-bold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-extrabold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-extrabold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-extralight-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-extralight-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-light-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-medium-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-medium-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-semibold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-semibold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-thin-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/montserrat/montserrat-thin-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/css/iconmonstr-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/css/iconmonstr-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/fonts/iconmonstr-iconic-font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/fonts/iconmonstr-iconic-font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/fonts/iconmonstr-iconic-font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/fonts/iconmonstr-iconic-font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/iconmonstr-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/iconic/iconmonstr-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/p5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/search_index.en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/search_index.pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="26JIMQZKCESNYd7JeFFXlSn63nJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3777c89f-9078-4682-ac98-0d518ed0970a" name="Default Changelist" comment="" />
+      <created>1647135216844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647135216844</updated>
+    </task>
+    <servers />
+  </component>
+</project>

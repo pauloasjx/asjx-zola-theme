@@ -1,0 +1,15 @@
+name = "asjx"
+description = "asjx is a zola theme for cv/blog page."
+license = "MIT"
+homepage = "https://github.com/pauloasjx/asjx-zola-theme"
+min_version = "0.15.0"
+
+[extra]
+
+[author]
+name = "Paulo A"
+homepage = "https://github.com/pauloasjx"
+
+[original]
+author =  "pauloasjx"
+repo = "https://github.com/pauloasjx/asjx-zola-theme"

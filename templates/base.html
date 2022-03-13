@@ -8,7 +8,6 @@
 {% import 'macros/github.html' as macros_github -%}
 {% import 'macros/quote.html' as macros_quote -%}
 {% import 'macros/projects.html' as macros_projects -%}
-{% import 'macros/scripts.html' as macros_scripts -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +17,10 @@
 
 <body>
     {% block content %}{% endblock content %}
-    {{ macros_footer::footer() }}
+
+    {% if config.extra.enabled.footer %}
+      {{ macros_footer::footer() }}
+    {% endif %}
 </body>
 
 </html>

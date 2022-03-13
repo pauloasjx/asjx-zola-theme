@@ -16,6 +16,18 @@ socials = [
     { href = "https://github.com/", icon = "im im-github", text = "Github" },
 ]
 
+[extra.enabled]
+profile = true
+about = true
+more = true
+skills = true
+timeline = true
+projects = true
+quote = true
+github = true
+contact = true
+footer = true
+
 [languages.pt]
 generate_feed = true
 build_search_index = true

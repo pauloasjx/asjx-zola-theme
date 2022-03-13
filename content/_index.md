@@ -1,6 +1,5 @@
 +++
 [extra.menu]
-enabled = true
 menus = [
     { content = "Home", title = "home", href = "#home" },
     { content = "About", title = "sobre", href = "#sobre" },
@@ -10,7 +9,6 @@ menus = [
 
 
 [extra.profile]
-enabled = true
 title = "Hello World"
 description = """I'm Someone
 Developer passionate about innovation."""
@@ -21,20 +19,17 @@ buttons = [
 arrow = "About me"
 
 [extra.about]
-enabled = true
 title = "About me"
 description = "A little about myself"
 content = """Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui corrupti, dolore quia exercitationem doloremque ex consequuntur quasi eos vitae molestiae recusandae similique expedita illo sapiente nisi ipsam! Fugiat, distinctio saepe?"""
 
 [extra.about.more]
-enabled = true
 title = "A lot more about me"
 content = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur facere consequatur, harum hic aut, nulla quos eos sapiente omnis unde ipsum veniam doloremque officia aliquid rerum, quas dicta perspiciatis odio!"
 button = "My CV"
 button_href = "cv.pdf"
 
 [extra.skills]
-enabled = true
 skills_title = "Technologies I currently use/study"
 skills = [
     { name = "Python", percentage = "90" },
@@ -44,7 +39,6 @@ skills = [
 ]
 
 [extra.timeline]
-enabled = true
 title = "Experience"
 left = [
     { period = "2020 - ", place = "Somewhere", work = "Developer", content = """Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui corrupti, dolore quia exercitationem doloremque ex consequuntur quasi eos vitae molestiae recusandae similique expedita illo sapiente nisi ipsam! Fugiat, distinctio saepe?""" },
@@ -57,7 +51,6 @@ right = [
 ]
 
 [extra.projects]
-enabled = true
 title = "Projects"
 description = "Some personal projects"
 content = """Here are some of the latest personal projects. Projects developed in companies cannot be listed because they are systems in production."""
@@ -69,17 +62,14 @@ projects = [
 ]
 
 [extra.quote]
-enabled = true
 text = "\"If things are not failing, you are not innovating enough\""
 author = "Elon Musk"
 
 [extra.github]
-enabled = true
 username = "pauloasjx"
 global_stats = true
 
 [extra.contact]
-enabled = true
 title = "Contact"
 description = "You can contact me"
 content = """If you are interested in discussing artificial intelligence or computing problems in general. It will be a pleasure to exchange an idea."""
