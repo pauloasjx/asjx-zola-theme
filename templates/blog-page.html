@@ -1,9 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ page.title }}
-</h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+<section id="blog" class="s-blog page-hero target-section">
+  <div class="overlay"></div>
+  <div class="shadow-overlay"></div>
+  <div id="sketch" style="z-index: -10"></div>
+  <div class="blog-content">
+      <div class="row blog-content__main">
+          <h3>{{ page.date }}</h3>
+          <h1>{{ page.title }}</h1>
+      </div>
+  </div>
+</section>
+<script src="js/p5.min.js"></script>
+<script src="js/flow.js"></script>
+
+<section id="blog" class="s-about-list">
+  <div class="row about-content">
+    <div class="col-full">
+      {{ page.content }}
+    </div>
+  </div>
+</section>
 {% endblock content %}
