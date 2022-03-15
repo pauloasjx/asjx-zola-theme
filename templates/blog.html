@@ -1,12 +1,54 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
-<ul>
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="s-header">
+  <nav class="header-nav-wrap">
+      <ul class="header-nav">
+          {% for menu in section.extra.menu.menus %}
+          <li>
+              <a href={{ menu.href | safe }} title={{ menu.title | safe }}>{{ menu.content | safe }}</a>
+          </li>
+          {% endfor %}
+      </ul>
+  </nav>
+
+  <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+</div>
+
+<section id="blog" class="s-blog page-hero target-section">
+  <div class="overlay"></div>
+  <div class="shadow-overlay"></div>
+  <div id="sketch" style="z-index: -10"></div>
+  <div class="blog-content">
+      <div class="row blog-content__main">
+          <h3>Blog</h3>
+          <h1>Some blog</h1>
+      </div>
+  </div>
+</section>
+<script src="js/p5.min.js"></script>
+<script src="js/flow.js"></script>
+
+<section id="blog" class="s-about-list">
+  <div class="row about-content">
+    <div class="col-full text-center">
+        <h3>Posts</h3>
+    </div>
+
+    <div class="col-full">
+      {% for page in section.pages %}
+        <div class="timeline__block">
+            <div class="timeline__header">
+                <p class="timeline__timeframe">01/01/2020</p>
+                <h3>{{ page.title }}</h3>
+                <h5>lorem ipsum</h5>
+            </div>
+            <div class="timeline__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos neque architecto nesciunt ex vero ut eos iure possimus accusamus adipisci?
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</section>
 {% endblock content %}
