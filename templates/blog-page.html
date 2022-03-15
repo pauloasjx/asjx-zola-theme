@@ -12,13 +12,13 @@
       </div>
   </div>
 </section>
-<script src="js/p5.min.js"></script>
-<script src="js/flow.js"></script>
+<script src="../js/p5.min.js"></script>
+<script src="../js/flow.js"></script>
 
 <section id="blog" class="s-about-list">
   <div class="row about-content">
     <div class="col-full">
-      {{ page.content }}
+      {{ page.content | markdown | safe}}
     </div>
   </div>
 </section>
