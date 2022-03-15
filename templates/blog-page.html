@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+{# Enable menu section #}
+{% if config.extra.enabled.menu %}
+    {{ macros_menu::menu() }}
+{% endif %}
+
 <section id="blog" class="s-blog page-hero target-section">
   <div class="overlay"></div>
   <div class="shadow-overlay"></div>
@@ -12,8 +17,8 @@
       </div>
   </div>
 </section>
-<script src="../js/p5.min.js"></script>
-<script src="../js/flow.js"></script>
+<script src="../../js/p5.min.js"></script>
+<script src="../../js/flow.js"></script>
 
 <section id="blog" class="s-about-list">
   <div class="row about-content">

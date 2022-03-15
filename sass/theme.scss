@@ -2552,6 +2552,7 @@ html.no-csstransitions .home-content__main {
 
 .s-about-list {
   padding-top: 4rem;
+  min-height: 500px;
   padding-bottom: 9rem;
   background-color: #ffffff;
   position: relative;
@@ -2600,7 +2601,7 @@ html.no-csstransitions .home-content__main {
 .timeline__block {
   position: relative;
   padding-left: 8rem;
-  min-height: 28.8rem;
+  min-height: 24rem;
 }
 
 .timeline__bullet {
@@ -2628,6 +2629,18 @@ html.no-csstransitions .home-content__main {
 .timeline__header h3 {
   line-height: 1.25;
   margin: 0 0 0.3rem 0;
+}
+
+.timeline__header h3 a {
+  line-height: 1.25;
+  margin: 0 0 0.3rem 0;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.8rem;
+  color: #56a5af;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  position: relative;
+  margin-bottom: 0.6rem;
 }
 
 .timeline__header h5 {

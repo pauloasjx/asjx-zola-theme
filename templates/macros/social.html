@@ -1,12 +1,14 @@
+{% macro social() %}
 <ul class="home-social">
-    {socials.map(social =>
-      <li>
-          <a target="_blank"
-             href={social.href}>
-            <i class={social.icon}
-               aria-hidden="true"/>
-            <span>{social.text}</span>
-          </a>
-      </li>
-    )}
-  </ul>
+  {% for social in config.extra.socials %}
+    <li>
+      <a target="_blank"
+         href="{{ social.href | safe }}">
+        <i class="{{ social.icon | safe }}"
+           aria-hidden="true"/>
+        <span>{{ social.text | safe }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

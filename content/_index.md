@@ -13,7 +13,7 @@ title = "Hello World"
 description = """I'm Someone
 Developer passionate about innovation."""
 buttons = [
-    { text = "Blog", url = "#blog" },
+    { text = "Blog", url = "/blog" },
     { text = "About me", url = "#sobre" },
 ]
 arrow = "About me"

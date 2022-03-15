@@ -2,7 +2,7 @@
 <div class="s-header">
     <nav class="header-nav-wrap">
         <ul class="header-nav">
-            {% for menu in section.extra.menu.menus %}
+            {% for menu in config.extra.menus %}
             <li>
                 <a href={{ menu.href | safe }} title={{ menu.title | safe }}>{{ menu.content | safe }}</a>
             </li>
