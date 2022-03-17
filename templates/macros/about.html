@@ -5,6 +5,10 @@
           <h3>{{ section.extra.about.title }}</h3>
           <h1>{{ section.extra.about.description }}</h1>
           <p class="lead">{{ section.extra.about.content }}</p>
+          <br>
+          <p>
+              {{ section.extra.about.extra }}
+          </p>
       </div>
     </div>
     
@@ -16,9 +20,20 @@
             </p>
         </div>
 
-        {# Enable skills section #}
+        {# Enable complement section #}
+        {% if config.extra.enabled.complement %}
         <div class="col-six tab-full right">
-            <h3>{{ section.extra.skills.skills_title | safe }}</h3>
+            <h3>{{ section.extra.about.more.title }}</h3>
+            <p>
+                {{ section.extra.about.more.content }}
+            </p>
+        </div>
+        {% endif %}
+
+        {# Enable skills section #}
+        {% if config.extra.enabled.skills %}
+        <div class="col-six tab-full right">
+            <h3>{{ section.extra.skills.skills_title }}</h3>
         
             <ul class="skill-bars">
                 {% for skill in section.extra.skills.skills %} 
@@ -29,6 +44,7 @@
                 {% endfor %}
             </ul>
         </div>
+        {% endif %}
     </div>
 
     <div class="row about-content about-content--buttons">
@@ -40,6 +56,8 @@
         </div>
     </div>
 
+    {# Enable skills section #}
+    {% if config.extra.enabled.timeline %}
     <div id="historico" class="row about-content about-content--timeline">
 
         <div class="col-full text-center">
@@ -82,6 +100,7 @@
             </div>
         </div>
       </div>
+      {% endif %}
     </section>
 {% endmacro %}
 
